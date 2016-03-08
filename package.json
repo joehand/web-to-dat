@@ -22,5 +22,13 @@
     "rimraf": "^2.5.2",
     "tap-spec": "^4.1.1",
     "tape": "^4.5.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joehand/web-to-dat.git"
+  },
+  "bugs": {
+    "url": "https://github.com/joehand/web-to-dat/issues"
+  },
+  "homepage": "https://github.com/joehand/web-to-dat#readme"
 }
