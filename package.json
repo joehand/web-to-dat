@@ -1,0 +1,26 @@
+{
+  "name": "web-to-dat",
+  "version": "1.0.0",
+  "description": "Save a website to folder and share via Dat",
+  "main": "index.js",
+  "scripts": {
+    "test": "standard && tape test/*.js | tap-spec"
+  },
+  "author": "Joe Hand <joe@joeahand.com> (http://joeahand.com/)",
+  "license": "ISC",
+  "dependencies": {
+    "datland-swarm-defaults": "^1.0.0",
+    "discovery-swarm": "^3.1.2",
+    "folder-walker": "^2.1.1",
+    "hyperdrive": "^3.5.1",
+    "level": "^1.4.0",
+    "stream-each": "^1.1.2",
+    "url-slug": "^1.1.0",
+    "website-scraper": "^0.3.2"
+  },
+  "devDependencies": {
+    "rimraf": "^2.5.2",
+    "tap-spec": "^4.1.1",
+    "tape": "^4.5.1"
+  }
+}
