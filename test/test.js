@@ -5,17 +5,17 @@ var rimraf = require('rimraf')
 var test = require('tape')
 var web2dat = require('../')
 
-var TEST_SITE = 'http://www.aaronsw.com/'
+var TEST_SITE = 'http://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.js'
 
 test('basic web scrape', function (t) {
   var opts = {
-    destDir: path.join(os.tmpdir(), 'web2datTest')
+    dir: path.join(os.tmpdir(), 'web2datTest')
   }
   web2dat(TEST_SITE, opts, function cloneDone (err, outDir, dat) {
     t.ifError(err, 'no clone error')
     t.same(
       dat.link,
-      '32f8488647dc8d74d86b1f8b04de77434b543596068786130d7d2f14108bd306',
+      '9cc1833014306e3cd29e3246260cb02ad9cdc2098b55032f8baa83a7df5b7734',
       'Link is correct'
     )
     fs.stat(outDir, function dirExits (err, stats) {
@@ -31,7 +31,7 @@ test('basic web scrape', function (t) {
 
 test('Scrape to Dat Share', function (t) {
   var opts = {
-    destDir: path.join(os.tmpdir(), 'web2datTest2')
+    dir: path.join(os.tmpdir(), 'web2datTest2')
   }
   web2dat(TEST_SITE, opts, function cloneDone (err, outDir, dat) {
     t.ifError(err, 'no clone error')

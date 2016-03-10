@@ -14,9 +14,7 @@
     "folder-walker": "^2.1.1",
     "hyperdrive": "^3.5.1",
     "level": "^1.4.0",
-    "stream-each": "^1.1.2",
-    "url-slug": "^1.1.0",
-    "website-scraper": "^0.3.2"
+    "stream-each": "^1.1.2"
   },
   "devDependencies": {
     "rimraf": "^2.5.2",
