@@ -1,5 +1,7 @@
 # Web2Dat
 
+**Currently Outdated**. Please check out [url-dat](https://github.com/joehand/url-dat) for now (puts a single url into a Dat).
+
 Clone a (static) website, create hash, and share via dat (optional)
 
 ## Usage
